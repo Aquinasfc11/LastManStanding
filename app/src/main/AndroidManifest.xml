@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.niall.lastmanstanding">
+
+    <!-- Permission needed to access avtivity monitor-->
+
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+
+    <!-- Permission to allow access to google services and access to internet -->
+
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+
+    <!-- Permission to access google services-->
+
+
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES"/>
+
+    <!-- Permission to access google locations-->
+
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+
+    <!-- Gain access to internet to display google images-->
+
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+
+        <!-- Splash to be launched first-->
+
+        -<activity android:name=".Splash">
+
+        -<intent-filter>
+
+        <action android:name="android.intent.action.MAIN"/>
+
+        <category android:name="android.intent.category.LAUNCHER"/>
+
+    </intent-filter>
+
+    </activity>
+
+        <!--All Intents used throughout the applications-->
+
+
+        <activity android:name=".Login"/>
+
+        <activity android:name=".Home"/>
+
+        <activity android:name=".Register"/>
+
+    </application>
+
+</manifest>
+
+
+
+

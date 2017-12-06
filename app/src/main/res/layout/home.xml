@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/plainb"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:weightSum="1">
+    <!-- Set up linear layout for height of logo-->
+    <LinearLayout
+        android:layout_width="211dp"
+        android:layout_height="102dp"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+    </LinearLayout>
+
+    <!-- Vertical linear layout to display image view and buttons-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+        <!-- Linear row-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="0.34">
+            <!--Space to push data across -->
+            <Space
+                android:layout_width="53dp"
+                android:layout_height="5dp" />
+            <!-- Lightbulb logo-->
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                app:srcCompat="@drawable/ball" />
+            <!-- Button for start Quiz link-->
+            <Button
+                android:id="@+id/buttonstart"
+                android:layout_width="178dp"
+                android:layout_height="37dp"
+                android:background="@android:color/transparent"
+                android:text="Create Game"
+                android:textColor="#F5A739"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+            <!--Space to push data across -->
+            <Space
+                android:layout_width="167dp"
+                android:layout_height="5dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:orientation="horizontal"
+            android:layout_weight="0.07">
+            <!--Space to push data across -->
+            <Space
+                android:layout_width="54dp"
+                android:layout_height="50dp" />
+            <!-- Lightbulb logo-->
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                app:srcCompat="@drawable/ball" />
+            <!-- Button for create question link-->
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="152dp"
+                android:layout_height="37dp"
+                android:background="@android:color/transparent"
+                android:text="Join Game"
+                android:textColor="#F5A739"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+            <!--Space to push data across -->
+            <Space
+                android:layout_width="167dp"
+                android:layout_height="5dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="0.33">
+            <!--Space to push data across -->
+            <Space
+                android:layout_width="54dp"
+                android:layout_height="5dp" />
+            <!-- Lightbulb logo-->
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                app:srcCompat="@drawable/ball" />
+            <!-- Button for leaderboard link-->
+            <Button
+                android:id="@+id/leaderboard"
+                android:layout_width="156dp"
+                android:layout_height="37dp"
+                android:background="@android:color/transparent"
+                android:text="My Games"
+                android:textColor="#F5A739"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+            <!--Space to push data across -->
+            <Space
+                android:layout_width="167dp"
+                android:layout_height="5dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1"
+            android:layout_weight="0.14">
+            <!--Space to push data across -->
+            <Space
+                android:layout_width="54dp"
+                android:layout_height="50dp" />
+            <!-- Lightbulb logo-->
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                app:srcCompat="@drawable/ball" />
+            <!-- Button for help link-->
+            <Button
+                android:id="@+id/helpButton"
+                android:layout_width="69dp"
+                android:layout_height="37dp"
+                android:background="@android:color/transparent"
+                android:text="Rules"
+                android:textColor="#F5A739"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:layout_weight="1.81" />
+            <!--Space to push data across -->
+            <Space
+                android:layout_width="167dp"
+                android:layout_height="5dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.64"
+            android:orientation="horizontal"
+            android:weightSum="1">
+            <!--Space to push data across -->
+            <Space
+                android:layout_width="54dp"
+                android:layout_height="50dp" />
+            <!-- Lightbulb logo-->
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                app:srcCompat="@drawable/ball" />
+            <!-- Button for logout link-->
+            <Button
+                android:id="@+id/logout"
+                android:layout_width="110dp"
+                android:layout_height="28dp"
+                android:layout_marginTop="10dp"
+                android:background="@android:color/transparent"
+                android:gravity="right"
+                android:text="Logout"
+                android:textColor="#F5A739"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+            <!--Space to push data across -->
+            <Space
+                android:layout_width="167dp"
+                android:layout_height="5dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="368dp"
+            android:layout_height="58dp"
+            android:orientation="horizontal">
+            <!-- Textview to display username-->
+            <TextView
+                android:id="@+id/welcomeID"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:textColor="#000"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

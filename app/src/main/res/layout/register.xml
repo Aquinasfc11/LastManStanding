@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?><!-- Linear Layout used for layout and plainb background used from drawable folder-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/plainb"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:weightSum="1">
+    <!--Linear layout used for layout features -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="113dp"
+        android:orientation="vertical"
+        android:weightSum="1"></LinearLayout>
+    <!--Linear layout used for layout features -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="1">
+        <!-- Textview used to display the word username-->
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Username"
+            android:textColor="#fafafa"
+            android:textSize="20dp" />
+        <!--EditText area for user to enter their username -->
+        <EditText
+            android:id="@+id/editText3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Name"
+            android:inputType="textPersonName"
+            android:maxLength="12"
+            android:textColor="#FFFFFF" />
+        <!--TextView used to display word password -->
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Password"
+            android:textColor="#fafafa"
+            android:textSize="20dp" />
+        <!-- EditText used for user to enter their password-->
+        <EditText
+            android:id="@+id/editText5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:maxLength="15"
+            android:textColor="#FFFFFF" />
+        <!-- TextView used to display word confirm password-->
+        <TextView
+            android:id="@+id/textView14"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Confirm Password"
+            android:textColor="#fafafa"
+            android:textSize="20dp" />
+        <!--EditText used to enter confirmed password -->
+        <EditText
+            android:id="@+id/editText6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Confirm Password"
+            android:inputType="textPassword"
+            android:maxLength="15"
+            android:textColor="#FFFFFF" />
+        <!--Small Space used for layout purposes -->
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="30dp" />
+        <!-- Submit button that enters the data to database-->
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="40pt"
+            android:layout_height="20pt"
+            android:layout_gravity="center"
+            android:background="@drawable/mybutton"
+            android:gravity="center"
+            android:text="Submit" />
+    </LinearLayout>
+</LinearLayout>

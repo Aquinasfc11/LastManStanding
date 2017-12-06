@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?><!-- Linear Layout used for layout and plainb background used from drawable folder-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:style="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/lin_lay"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@drawable/uquizicon"
+    android:gravity="center"
+    android:orientation="vertical">
+    <!--image of the logo for the splash screen -->
+    <ImageView
+        android:id="@+id/splash"
+        android:layout_width="wrap_content"
+        android:layout_height="376dp"
+        android:background="@drawable/uquizicon" />
+    <!--spinning progress bar on splash screen animation-->
+    <ProgressBar
+        android:id="@+id/progress"
+        android:layout_width="163dp"
+        android:layout_height="94dp"
+        android:layout_centerHorizontal="true"
+        android:paddingTop="20dp" />
+    <!--Linear layout used for layout features -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:weightSum="1"></LinearLayout>
+</LinearLayout>
